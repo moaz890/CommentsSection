@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <div class="container flex-center">
+    <div class="wrapper">
+      <ul class="main-comments flexcol">
+
+        <li class="flexcol" style="order: 10000;">
+          <div class="content flex">
+            <div class="userinfo"><img src="images/avatars/image-juliusomo.png" alt="" srcset=""></div>
+            <form action="get" class="flex add-comment-form" state="comment">
+              <textarea name="" id="" ></textarea>
+              <button type="submit">Reply</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="popup">
+      <div class="content flexcol">
+        <h3>Delete Comment</h3>
+        <p>Are You sure to delete The Comment? This will remove the content and can't be undone</p>
+        <div class="buttons flex">
+          <a href="" class="btn cancel">No, Cancel</a>
+          <a href="" class="btn confirm-delete">Yes, Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
